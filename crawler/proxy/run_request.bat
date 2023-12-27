@@ -1,0 +1,1 @@
+mitmdump -p 8080 -s response.py --flow-detail 0
