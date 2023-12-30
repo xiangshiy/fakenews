@@ -12,4 +12,4 @@ DouYinDataSavePath = f"{PROJECT_PATH}\data-douyin"
 KuaiShowDataSavePath = f"{PROJECT_PATH}\data-kuaishou"
 # 浏览器用户文件路径
 # --------------只改这个-------------------
-Profile_dir = r"C:\Users\CHALN\AppData\Roaming\Mozilla\Firefox\Profiles\bl883mpl.default-release-1"
+Profile_dir = r"C:\\Users\\CHALN\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\bl883mpl.default-release-1"

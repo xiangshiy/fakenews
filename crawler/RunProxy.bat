@@ -1,1 +1,1 @@
-mitmdump -p 8080 -s E:\crawler\Proxy.py --flow-detail 0
+mitmdump -p 8080 -s c:\Users\CHALN\Desktop\github\-\crawler\Proxy.py --flow-detail 0
