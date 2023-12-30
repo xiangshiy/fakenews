@@ -1,4 +1,4 @@
-from Comment import Comment
+from MultiPlatVideoCrawler.Comment import Comment
 
 
 class DataSet:

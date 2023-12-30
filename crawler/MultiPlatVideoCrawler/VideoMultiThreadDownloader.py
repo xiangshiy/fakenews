@@ -1,8 +1,9 @@
 import collections
 import threading
-import mitmproxy
 import requests
 from threading import Thread
+
+from MultiPlatVideoCrawler.utils.log import log_warn
 
 
 class VideoMultiThreadDownloader:
@@ -18,8 +19,61 @@ class VideoMultiThreadDownloader:
         self.thread_num = thread_num
         self.free_thread_num = thread_num
         self.platform = platform
+        header1 = {
+            "Accept": "*/*",
+            "Accept-Encoding": "identity;q=1, *;q=0",
+            "Accept-Language": "zh-CN,zh;q=0.9",
+            "Connection": "keep-alive",
+            "Host": "v26-web.douyinvod.com",
+            "Origin": "https://www.douyin.com",
+            "Range": "bytes=0-",
+            "Referer": "https://www.douyin.com/",
+            "Sec-Fetch-Dest": "video",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "cross-site",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Chromium\";v=\"118\", \"Google Chrome\";v=\"118\", \"Not=A?Brand\";v=\"99\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+        }
+        header2 = {
+            "Host": "v2.kwaicdn.com",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+            "Accept": "video/webm,video/ogg,video/*;q=0.9,application/ogg;q=0.7,audio/*;q=0.6,*/*;q=0.5",
+            "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+            "Referer": "https://www.kuaishou.com/",
+            "Range": "bytes=0-",
+            "Origin": "https://www.kuaishou.com",
+            "Connection": "keep-alive",
+            "Sec-Fetch-Dest": "video",
+            "Sec-Fetch-Mode": "cors",
+            "Sec-Fetch-Site": "cross-site",
+            "Accept-Encoding": "identity",
+            "Pragma": "no-cache",
+            "Cache-Control": "no-cache"
+        }
+        if platform == 'douyin':
+            self.header = header1
+        else:
+            self.header = header2
 
-    def download_control(self, option: str, /, video: tuple = None):
+    def download_control(self, option: str, /, video_t: tuple = None):
+        def download_video(video: tuple):
+            """
+            下载视频
+            @param video: 视频链接元组(视频id, 视频链接)
+            """
+
+            # 下载视频
+            with open(f"{self.save_path}\\{video[0]}.mp4", "wb+") as f:
+                f.write(requests.get(video[1], headers=self.header).content)
+                log_warn(
+                    f"下载视频{video[0]}.mp4成功",
+                )
+
+            # 下载结束，通知下载控制器
+            self.download_control("finish")
+
         # 创建锁
         lock = threading.RLock()
         # 加锁
@@ -29,13 +83,13 @@ class VideoMultiThreadDownloader:
             # 判断线程池的任务数是否达到上限
             if self.free_thread_num == 0:
                 # 将任务添加到任务队列末尾
-                self.video_download_task.append(video)
+                self.video_download_task.append(video_t)
             else:
                 # 线程池中的线程数减1
                 self.free_thread_num -= 1
                 # 异步执行下载任务
-                Thread(target=self.download_video,
-                       args=(video,)).start()
+                Thread(target=download_video,
+                       args=(video_t,)).start()
         # 下载结束
         elif option == "finish":
             # 线程池中的线程数加1
@@ -46,33 +100,7 @@ class VideoMultiThreadDownloader:
                 self.free_thread_num -= 1
 
                 # 从任务队列中取出任务
-                Thread(target=self.download_video,
-                       args=(self.video_download_task.popleft())).start()
+                Thread(target=download_video,
+                       args=(self.video_download_task.popleft(),)).start()
         # 释放锁
         lock.release()
-
-    def download_video(self, video: tuple):
-        """
-        下载视频
-        @param video: 视频链接元组(视频id, 视频链接)
-        """
-        # 创建锁
-        lock = threading.RLock()
-        # 加锁
-        lock.acquire()
-
-        order = self.video_order
-        self.video_order += 1
-
-        # 释放锁
-        lock.release()
-
-        # 下载视频
-        with open(f"{self.save_path}\\{self.platform}\\{video[0]}.mp4", "wb+") as f:
-            f.write(requests.get(video[1]).content)
-            mitmproxy.ctx.log(
-                f"下载视频{self.platform}_video_{order}.mp4成功",
-                "warn")
-
-        # 下载结束，通知下载控制器
-        self.download_control("finish")
