@@ -1,0 +1,121 @@
+1698934646764	geckodriver	INFO	Listening on 127.0.0.1:50064
+1698934658363	geckodriver	INFO	Listening on 127.0.0.1:50072
+1698934663271	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-blink-features=AutomationControl ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PREJUD~1\\AppData\\Local\\Temp\\rust_mozprofileoYoMjc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698934663737	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-disable-blink-features"
+1698934663824	Marionette	INFO	Listening on port 50082
+Read port: 50082
+WebDriver BiDi listening on ws://127.0.0.1:50073
+1698934663861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+console.error: ({})
+console.error: (new TypeError("Services is undefined", "resource://cpmanager-legacy/ceTracking.jsm", 150))
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+DevTools listening on ws://127.0.0.1:50073/devtools/browser/22b0ca7f-ead6-444b-952b-cc41d195ac11
+JavaScript warning: https://s1-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://cpmanager-legacy/ceTracking-old.jsm, line 254: TypeError: ADU_Task is undefined
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/iframe/index.fb2bec43.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/iframe/index.fb2bec43.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/iframe/index.fb2bec43.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/iframe/index.fb2bec43.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/weblogger.4ed981d5.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/iframe/index.fb2bec43.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://w2.kskwai.com/kos/nlav11684/static/captcha/js/iframe/index.fb2bec43.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1698934716348	geckodriver	INFO	Listening on 127.0.0.1:55352
+1698934721107	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-blink-features=AutomationControl ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PREJUD~1\\AppData\\Local\\Temp\\rust_mozprofile5etHJg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698934721535	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-disable-blink-features"
+1698934721600	Marionette	INFO	Listening on port 55363
+WebDriver BiDi listening on ws://127.0.0.1:55353
+Read port: 55363
+1698934721795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+console.error: ({})
+console.error: (new TypeError("Services is undefined", "resource://cpmanager-legacy/ceTracking.jsm", 150))
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+DevTools listening on ws://127.0.0.1:55353/devtools/browser/8852d8cf-2fd8-4a0b-9edd-313aa1c45b59
+JavaScript warning: https://www.douyin.com/search/%E4%BF%84%E7%BD%97%E6%96%AF%E7%82%B8%E6%AF%81%E7%BE%8E%E5%9B%BD%E8%BF%90%E5%BE%80%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E9%9B%86%E6%9D%9F%E5%BC%B9%E8%8D%AF%E5%88%97%E8%BD%A6%EF%BC%9F, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1698934724260	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: resource://cpmanager-legacy/ceTracking-old.jsm, line 254: TypeError: ADU_Task is undefined
+JavaScript warning: https://lf-c-flwb.bytetos.com/obj/rc-client-security/c-webmssdk/1.0.0.23/webmssdk.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://lf-c-flwb.bytetos.com/obj/rc-client-security/c-webmssdk/1.0.0.23/webmssdk.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 33232, MediaDecoderStateMachine #1] WARNING: Decoder=1a9d1c3c400 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 33232, MediaDecoderStateMachine #1] WARNING: Decoder=1a9d1c3c400 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:166
+console.error: ({})
+1698935755212	geckodriver	INFO	Listening on 127.0.0.1:11121
+1698935789098	mozrunner::runner	INFO	Running command: "C:\\Users\\Lara\\AppData\\Local\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-blink-features=Aut ... 22" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lara\\AppData\\Local\\Temp\\rust_mozprofile1WL0AK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698935789534	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-disable-blink-features"
+1698935789596	Marionette	INFO	Listening on port 11132
+WebDriver BiDi listening on ws://127.0.0.1:11122
+Read port: 11132
+1698935789789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+DevTools listening on ws://127.0.0.1:11122/devtools/browser/542d64cd-6374-4da3-abb9-c6a8888dfb9c
+console.error: ({})
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+JavaScript warning: https://www.douyin.com/search/%E4%BF%84%E7%BD%97%E6%96%AF%E7%82%B8%E6%AF%81%E7%BE%8E%E5%9B%BD%E8%BF%90%E5%BE%80%E4%B9%8C%E5%85%8B%E5%85%B0%E7%9A%84%E9%9B%86%E6%9D%9F%E5%BC%B9%E8%8D%AF%E5%88%97%E8%BD%A6%EF%BC%9F, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1698935792159	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: resource://cpmanager-legacy/ceTracking-old.jsm, line 254: TypeError: ADU_Task is undefined
+JavaScript warning: https://lf-c-flwb.bytetos.com/obj/rc-client-security/c-webmssdk/1.0.0.23/webmssdk.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://lf-c-flwb.bytetos.com/obj/rc-client-security/c-webmssdk/1.0.0.23/webmssdk.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://lf3-cdn-tos.bytegoofy.com/obj/goofy/ies/douyin/search/async/3102.4bbec891.js, line 2: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 4128, MediaDecoderStateMachine #1] WARNING: Decoder=21ed274a300 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 4128, MediaDecoderStateMachine #1] WARNING: Decoder=21ed274a300 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006): file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:166
+1698935919596	geckodriver	INFO	Listening on 127.0.0.1:11393
+1698935974769	mozrunner::runner	INFO	Running command: "C:\\Users\\Lara\\AppData\\Local\\Mozilla Firefox\\firefox.exe" "--marionette" "--disable-blink-features=Aut ... 94" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lara\\AppData\\Local\\Temp\\rust_mozprofileJ6bsL8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698935975178	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+console.error: "Warning: unrecognized command line flag" "-disable-blink-features"
+1698935975217	Marionette	INFO	Listening on port 11415
+WebDriver BiDi listening on ws://127.0.0.1:11394
+Read port: 11415
+1698935975487	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+DevTools listening on ws://127.0.0.1:11394/devtools/browser/7fc0bb32-e17e-45da-9f9c-7b4c2c135881
+console.error: ({})
+console.log: WebExtensions: activityStreamHack.initRemotePages init pl_no_more
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://cpmanager-legacy/ceTracking-old.jsm, line 254: TypeError: ADU_Task is undefined
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 182: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 182: WebGL context was lost.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 15: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 15: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 15: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 15: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/NewReco-csr-movie-video-short-video-tesla-home-tesla-video-video.47b970c3.js, line 15: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://s2-111422.kwimgs.com/kos/nlav111422/pc-vision/js/app.eb7b4bec.js, line 30: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

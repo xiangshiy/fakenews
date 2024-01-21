@@ -1,2 +1,6 @@
  
 "auth" 
+*.log
+data-kuaishou/*
+data-douyin/*
+.idea
