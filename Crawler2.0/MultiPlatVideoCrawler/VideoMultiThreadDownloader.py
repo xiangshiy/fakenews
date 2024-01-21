@@ -3,6 +3,7 @@ import threading
 import requests
 from threading import Thread
 
+from MultiPlatVideoCrawler.conf.config import VIDEO_MAX_NUM
 from MultiPlatVideoCrawler.utils.log import log_warn
 
 
@@ -19,6 +20,7 @@ class VideoMultiThreadDownloader:
         self.thread_num = thread_num
         self.free_thread_num = thread_num
         self.platform = platform
+        self.video_num = 0
         header1 = {
             "Accept": "*/*",
             "Accept-Encoding": "identity;q=1, *;q=0",
@@ -79,7 +81,7 @@ class VideoMultiThreadDownloader:
         # 加锁
         lock.acquire()
         # 下载任务
-        if "download" == option:
+        if "download" == option and self.video_num < VIDEO_MAX_NUM:
             # 判断线程池的任务数是否达到上限
             if self.free_thread_num == 0:
                 # 将任务添加到任务队列末尾
@@ -90,8 +92,10 @@ class VideoMultiThreadDownloader:
                 # 异步执行下载任务
                 Thread(target=download_video,
                        args=(video_t,)).start()
+                self.video_num += 1
+
         # 下载结束
-        elif option == "finish":
+        elif option == "finish" and self.video_num < VIDEO_MAX_NUM:
             # 线程池中的线程数加1
             self.free_thread_num += 1
             # 判断任务队列是否为空
@@ -102,5 +106,6 @@ class VideoMultiThreadDownloader:
                 # 从任务队列中取出任务
                 Thread(target=download_video,
                        args=(self.video_download_task.popleft(),)).start()
+                self.video_num += 1
         # 释放锁
         lock.release()

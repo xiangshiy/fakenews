@@ -6,6 +6,7 @@ import time
 
 from threading import Thread
 
+from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
@@ -164,21 +165,24 @@ class AutoSlider:
             log_warn(className)
             for i in range(VIDEO_MAX_NUM):
                 scroll2view = """
-                                 let element = document.getElementsByClassName(\"""" + className + "\")[" + str(
-                    i) + "];" + \
+                    let element = document.getElementsByClassName(\"""" + className + "\")[" + str(i) + "];" + \
                               """                 
-                                 element.scrollIntoView({  
-                                    behavior: 'smooth',
-                                    block: 'start',
-                                    inline: 'start'
+                    element.scrollIntoView({  
+                       behavior: 'smooth',
+                       block: 'start',
+                       inline: 'start'
                                  });
                               """
                 driver.execute_script(scroll2view)
                 try:
-                    self.get_html_elements(driver,
-                                           f"//div[@data-e2e='feed-comment-icon']")[video_order].click()
+                    commentList = self.get_html_elements(driver, "//div[@data-e2e='feed-comment-icon']")
+                    commentList[i if i < len(commentList) else -3].click()
+                    # commentList[i if i < len(commentList) else -3].send_keys("x")
+                    # driver.find_element(By.TAG_NAME, 'html').send_keys("x")
+
                 except Exception as e:
                     print(e)
+                    print("I' m here!")
                 time.sleep(5)
                 video_order += 1
         driver.quit()
