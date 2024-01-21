@@ -1,6 +1,8 @@
  
 "auth" 
-venv/*
-content3/*
+venv
+content3
 __pycache__
 .idea
+LastKeyINkuaishou.json
+LastKeyINdouyin.json

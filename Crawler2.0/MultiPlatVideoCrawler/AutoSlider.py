@@ -137,7 +137,10 @@ class AutoSlider:
         """
         在平台中搜索
         """
-
+        # 打开浏览器
+        driver = webdriver.Firefox(options=self.option)
+        # 最大化
+        driver.maximize_window()
         time.sleep(5)
         for keyword in self.keywords:
             # 设置当前搜索
@@ -146,10 +149,7 @@ class AutoSlider:
             self.douyin_downloader = VideoMultiThreadDownloader(
                 f"{DataSavePath}\\{self.now_search}\\video",
                 "douyin", 10)
-            # 打开浏览器
-            driver = webdriver.Firefox(options=self.option)
-            # 最大化
-            driver.maximize_window()
+
             # 请求
             driver.get(f"https://www.douyin.com/search/{keyword['keyword']}")
             video_order = 0
@@ -181,7 +181,7 @@ class AutoSlider:
                     print(e)
                 time.sleep(5)
                 video_order += 1
-            driver.quit()
+        driver.quit()
 
     def searchInKuaiShou(self):
 
