@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 
 from MultiPlatVideoCrawler.conf.config import Profile_dir
@@ -14,3 +16,5 @@ driver = webdriver.Firefox(options=option)
 driver.maximize_window()
 # 请求
 driver.get(f"https://www.kuaishou.com/search/video?searchKey=都是股份合计")
+time.sleep(5)
+driver.get(f"https://www.kuaishou.com/search/video?searchKey=合计")

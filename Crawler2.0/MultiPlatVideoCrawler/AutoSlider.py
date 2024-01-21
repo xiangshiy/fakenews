@@ -8,6 +8,8 @@ from threading import Thread
 
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+from selenium.webdriver.firefox.service import Service
+
 from MultiPlatVideoCrawler.VideoMultiThreadDownloader import VideoMultiThreadDownloader
 from MultiPlatVideoCrawler.CommentSaver import CommentSaver
 from MultiPlatVideoCrawler.conf.config import PROJECT_PATH, Profile_dir, DouYinDataSavePath, KuaiShowDataSavePath, \
@@ -184,6 +186,13 @@ class AutoSlider:
     def searchInKuaiShou(self):
 
         time.sleep(5)
+        # 打开浏览器
+        gecko_driver_path = 'D:\Python\python3.11.4\geckodriver.exe'
+        # 固定搭配直接用就行了
+        service = Service(executable_path=gecko_driver_path)
+        driver = webdriver.Firefox(options=self.option)
+        # 最大化
+        driver.maximize_window()
         for keyword in self.keywords:
             # 设置当前搜索
             self.setNowSearch(keyword)
@@ -192,13 +201,7 @@ class AutoSlider:
             self.kuaishou_downloader = VideoMultiThreadDownloader(
                 f"{DataSavePath}\\{self.now_search}\\video",
                 "kuaishou", 10)
-            # 打开浏览器
-            gecko_driver_path = 'D:\Python\python3.11.4\geckodriver.exe'
-            # 固定搭配直接用就行了
-            # service = Service(executable_path=gecko_driver_path)
-            driver = webdriver.Firefox(options=self.option)
-            # 最大化
-            driver.maximize_window()
+
             # 请求
             driver.get(f"https://www.kuaishou.com/search/video?searchKey={keyword['keyword']}")
             time.sleep(5)
@@ -214,7 +217,7 @@ class AutoSlider:
                 time.sleep(5)
                 # 下一个
                 self.doFuncUntilNoException(next_t.click, ())
-            driver.quit()
+        driver.quit()
 
     @staticmethod
     def mkdir(path):
