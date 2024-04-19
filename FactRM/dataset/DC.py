@@ -101,18 +101,6 @@ import torch.nn.functional as F
 
 
 def resize_tensor(t, new_size):
-    # t = t[0]
-    # diff = new_size - len(t)
-    # # print('>>diff=', diff)
-    # if diff > 0:
-    #     t.extend([0] * diff)
-    # elif diff < 0:
-    #     # 如果新大小小于原始大小，则删除末尾的元素
-    #     t = t[:new_size]
-    # # print('type(tensor)=', type(t))
-    # t = torch.tensor(t)
-    # # print('>>tensor.size=', t.shape)
-    # return t
     t = t[0]
     diff = new_size - len(t)
     if diff > 0:
@@ -149,9 +137,6 @@ if __name__ == '__main__':
     print
     # 构建训练集和测试集
     X_train, X_test, y_train, y_test = train_test_split(concatenated_vector, labels, test_size=0.2, random_state=42)
-
-    # 构建Logistic Regression分类器并进行训练
-    # clfnn.TransformerEncoderLayer(d_model=self.dim, nhead=2, batch_first=True)
 
     clf = LogisticRegression()
     clf.fit(X_train, y_train)
